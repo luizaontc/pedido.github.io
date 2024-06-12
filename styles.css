@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("bg.gif");
+    background-repeat: repeat;
+    background-size: 300px 300px; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.box {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px; 
+}
+
+button {
+    padding-inline: 10px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.hidden {
+    display: flex;
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(0.3); /* Aumenta o tamanho e completa a rotação */
+    }
+}
+
+#euemeuamor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) scale(0.5); /* Começa pequeno e sem rotação */
+    animation: rotate 4s ease-in-out forwards; /* Aplica a animação de transformação */
+}
